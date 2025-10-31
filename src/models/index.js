@@ -1,6 +1,7 @@
 const sequelize = require('../config/database');
 const Plato = require('./plato');
 const Presa = require('./presa')
+const Mesa = require('./mesa');
 const PlatoPresa = require('./platopresa');
 
 Plato.belongsToMany(Presa, {
@@ -21,5 +22,6 @@ module.exports = {
     sequelize,
     Plato,
     Presa,
-    PlatoPresa
+    PlatoPresa,
+    Mesa
 };
